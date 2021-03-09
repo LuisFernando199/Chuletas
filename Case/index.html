@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>CASE</title>
+	
+	<script type="text/javascript">
+		
+	function tipoBomba(){
+		
+		var bomba;
+		
+		bomba = parseInt( prompt('Porfavor corta el cable correcto ( los valores posibles son 1, 2, 3, 4 ): '));
+		
+		switch (bomba){
+
+			case 0:
+			alert ('Has rozado el cable, vuleve a intentarlo.');
+			break;
+
+			case 1:
+			alert ('Has cortado el rojo, estas vivo.');
+			break;
+
+			case 2:
+			alert ('Has cortado el verde, el temporizador va mas rapido date prisa.');
+			break;
+
+			case 3:
+			alert ('Has cortado el amarillo, corre va a estallar.');
+			break;
+
+			case 4:
+			alert ('Has cortado el negro, estas muerto.');
+			break;
+
+			default: alert('Deja de mirar la bomba y corta un cable.')
+		}
+
+	}
+
+	</script>
+
+	<style type="text/css">
+		.boton_1{
+			text-decoration: none;
+			padding: 3px;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-family: helvetica;
+			font-weight: 300;
+			font-size: 25px;
+			font-style: arial ;
+			color: white;
+			background-color: black;
+			border-radius: 15px;
+			border: 3px solid grey;
+		}
+		.boton_1:hover{
+			opacity: 0.6;
+			text-decoration: none;
+		}
+	</style>
+
+</head>
+<body>
+	
+	<a onclick="tipoBomba()" class="boton_1"> Click para cortar cable de la BOMBA <a>
+
+</body>
+</html>
